@@ -6,7 +6,7 @@ All functions use Node.js modules only.
 <br>
 
 ## Function description:
-In the `index.js` file you will find the following functions:
+In the `entrance1_5.js` file you will find the following functions:
 
 - [`changeEncoding()`](#changeEncoding)
 - [`encrypte()`](#encrypte)
