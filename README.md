@@ -59,7 +59,7 @@ The `decrypteAndChangeEncoding` <a id="decrypte"></a> function decrypte input fi
 - `cipherkey` (variable `key`): [read note](#important)
 - `cipheriv` (variable `iv`): [read note](#important)
 - `inputEncoding` (`string`): indicate the text encoding in the input file
-- `inputEncoding` (`string`): indicate the text encoding in the output file
+- `outputEncoding` (`string`): indicate the text encoding in the output file (if not indicated default: `utf-8`)
 
 The function utilizes the `Crypto`, `File system`,  `Stream` and `Buffer` Node.js modules:
 - [cryoto.createDecipheriv()](https://nodejs.org/api/crypto.html#cryptocreatedecipherivalgorithm-key-iv-options) method

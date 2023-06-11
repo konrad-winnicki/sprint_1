@@ -74,8 +74,8 @@ async function sumarDoblados(number1, number2, number3) {
 
 
 const sumarDoblados2 = async (number1, number2, number3) => {
-  const doblesList = [number1, number2, number3].map(doblador);
   try {
+    const doblesList = [number1, number2, number3].map(doblador);
     const nums = await Promise.all(doblesList);
     let result = nums.reduce((total, number_1) => {
       return total + number_1;
