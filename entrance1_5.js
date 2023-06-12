@@ -23,9 +23,6 @@ function appendStringToFile(fileName, string) {
   });
 }
 
-//appendStringToFile("myfile.txt", "Smile :)");
-
-
 /*
 Crea una altra funció que mostri per consola el contingut 
 del fitxer de l'exercici anterior.
@@ -39,9 +36,6 @@ function readFile(directory, fileName) {
     return data;
   });
 }
-
-//readFile("C:\\Projects\\especializacion\\sprint_1\\", "myfile.txt");
-
 
 /*
 Crea una funció que comprimeixi el fitxer del nivell 1.
@@ -62,7 +56,6 @@ async function zipFile(path, fileName) {
 zipFile("C:\\Projects\\especializacion\\sprint_1\\", "myfile.txt").catch(
   (err) => console.log(err)
 );
-
 
 /*
 Crea una funció que imprimeixi recursivament un
@@ -90,9 +83,6 @@ function messagePrinter2(message, maxCallNumber) {
   }, 1000);
 }
 
-//messagePrinter("Print after 1 sec.", 3);
-
-
 /*
 Crea una funció que llisti per la consola el contingut del directori 
 d'usuari/ària de l'ordinador utilizant Node Child Processes.
@@ -116,8 +106,6 @@ function getDir() {
   });
 }
 
-//getDir();
-
 function getDir2() {
   const process = child.spawn("cmd.exe", ["/c", "echo", "%USERPROFILE%"]);
 
@@ -129,9 +117,6 @@ function getDir2() {
     console.error(`stderr: ${data}`);
   });
 }
-
-//getDir2()
-
 
 /*
 Crea una funció que creï dos fitxers codificats en hexadecimal i en 
@@ -224,4 +209,3 @@ setTimeout(() => {
   decrypteAndChangeEncoding("hex.enc", "hex-2.txt", key, iv, "hex");
   decrypteAndChangeEncoding("base64.enc", "base64-2.txt", key, iv, "base64");
 }, 3000);
-

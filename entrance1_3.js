@@ -13,9 +13,6 @@ function putNameAsParam(...args) {
   });
 }
 
-//const promise = putNameAsParam("Maica");
-//console.log(promise);
-
 /*
 Crea una arrow function que rebi un paràmetre i una funció callback 
 i li passi a la funció un missatge o un altre (que s'imprimirà per consola) 
@@ -33,8 +30,6 @@ const wrapingCallback = (callback, ...args) => {
     callback("Custom parameter not passed to function.");
   }
 };
-
-//wrapingCallback(printMessage, "Maica");
 
 /*
 Donats els objectes employees i salaries, crea una arrow function 
@@ -63,10 +58,6 @@ function getEmployee(id, employeesList) {
   });
 }
 
-//getEmployee(1, employees)
-// .then((employee) => console.log(employee))
-// .catch((err) => console.log(err.message));
-
 /*
 Crea una altra arrow function getSalary() similar a l'anterior que rebi com 
 a paràmetre un objecte employee i retorni el seu salari.
@@ -92,10 +83,6 @@ function getSalary(employee, salaryList) {
     }
   });
 }
-
-//getSalary({ id: 1, name: "Linux Torvalds" }, salaries)
-//.then((employee) => console.log(employee))
-//.catch((err) => console.log(err.message));
 
 /*
 Invoca la primera funció getEmployee() i després getSalary() niant 

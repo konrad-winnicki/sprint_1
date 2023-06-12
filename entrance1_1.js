@@ -18,7 +18,6 @@ function getDataFromUser() {
   prompt.start();
   prompt.get(schema, (err, result) => console.log(result.name));
 }
-//getDataFromUser()
 
 /*
 Mostra per consola el nom i cognoms de l'usuari/ària mitjançant 
@@ -48,8 +47,6 @@ function getDataFromUserAdvanced() {
   prompt.get(schema, printDetailsResult);
 }
 
-//getDataFromUserAdvanced()
-
 //Invoca una funció que retorni un valor des de dins d'una template literal.
 
 function printString() {
@@ -57,8 +54,6 @@ function printString() {
 }
 
 const result = () => console.log(`This is my: ${printString()}`);
-
-//result()
 
 /*
 Crea una matriu de deu funcions i emplena-la mitjançant un 
@@ -87,8 +82,6 @@ function functionsInvoker() {
     functions[i]();
   }
 }
-
-//functionsInvoker()
 
 /*
 Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari/ària a rebut com a paràmetre.
